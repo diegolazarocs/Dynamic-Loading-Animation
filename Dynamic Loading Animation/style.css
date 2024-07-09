@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: var(#fff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #00008bcb;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.loading {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: load 1.2s ease infinite;
+}
+.loading.one {
+  animation-delay: 0.3s;
+}
+.one {
+  animation-delay: 0.3s;
+}
+.loading.two {
+  animation-delay: 0.4s;
+}
+.loading.three {
+  animation-delay: 0.5s;
+}
+.loading.four {
+  animation-delay: 0.6s;
+}
+@keyframes load {
+  0% {
+    width: 25px;
+    height: 25px;
+  }
+  50% {
+    width: 15px;
+    height: 15px;
+  }
+}
